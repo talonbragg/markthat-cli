@@ -15,7 +15,9 @@ program
 
     if (program.markthatfile) {
         markthat.markthatFile(program.args[1]).then(thefile => {
-            fs.openSync(program.args[0], 'w');
+            if (!fs.existsSync(program.args[0])) {
+                fs.openSync(program.args[0], 'w');
+            }
             fs.writeFile(program.args[0], thefile, (err) => {
             
                 console.log(palette('green',"The file was succesfully saved!"));
