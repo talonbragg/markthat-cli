@@ -1,0 +1,35 @@
+{
+  "name": "markthat-cli",
+  "version": "0.1.0",
+  "description": "A cli version of markthat",
+  "main": "index.js",
+  "bin": {
+    "markthat": "./bin/markthat.js"
+  },
+  "dependencies": {
+    "commander": "^2.15.1",
+    "markthat": "^0.2.0",
+    "messagepalette": "^0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talonbragg/markthat-cli.git"
+  },
+  "keywords": [
+    "markthat",
+    "mark",
+    "that",
+    "cli",
+    "markthat-cli"
+  ],
+  "author": "Talon Bragg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talonbragg/markthat-cli/issues"
+  },
+  "homepage": "https://github.com/talonbragg/markthat-cli#readme"
+}
